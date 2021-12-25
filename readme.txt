@@ -9,5 +9,5 @@ what should be included in this project:
 
 2. Set a remote dev env 
 3. use mariadb to store the user informations  // other datasets
-4. configure security settings ex) firewall- ufw settings. 
+4. configure security settings ex) firewall- ufw settings.
 
