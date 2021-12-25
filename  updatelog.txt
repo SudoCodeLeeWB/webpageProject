@@ -1,0 +1,35 @@
+Updates log 
+
+2021 12/22 -> configuerd Basic webpage to introduce myself , need to add contents.
+
+
+
+2021 12/24 fri -> Configured LAMP system settings ,  changed web hosting program from caddy to Apache2. 
+                          Caddy had to use the preset names like index.html for their first page, but apache2 just need to define the path for the first page in the .conf file.
+                          Compared to caddy , apache2 does not have ip binding 127.0.0.1 as  a default, but need to enable socket 80 to Listen.
+
+                          Mysql installed with authentication , need password to access it.currently didn't make it only accessable on local host 
+                          //TODO : design a databse and upload a uml for it.  The table is for user authentication in my webpage. (will add a login button)
+                          // connect a database hadling tool with it.-> connect a Datagrip.
+                          //Current status for mysql : only downloaded it, need to add a account for outer client to access.
+                          
+                          Maked a  simbolic link file from /var/www -> /workspace and /workspace is linked to ~/workspace so that every user can share the workspace. 
+                        //TODO : Need to add a group for granting the permission of this workspace file. only my Ipad ssh client and mac ssh client can access to it 
+                         //TODO : Update 12/25 :  also need to add a password for root user // sudo su root can be accessed without entering a password. 
+                          Learned how to read the config file. 
+                        //TODO : set the vim envrionment globally so that I can use it also for the mac ssh client. Learn the vim extensions. (currently available only in ipad client)
+
+
+
+
+2021 12/25 sat -> Added https certification using Let's encript (ssl certificte , using certbot)
+                            Leraned about difference between http and https, DNS spoofing (security problem) and 80/433 port (used for http/https) , log files under the /var/log directory.
+                            < https is using the private key and public key to  encript the connection >
+                           
+                            Modified the file structure in the /etc/apache2. Apache can host different webpages, so I added the dir for codeforlee.com and configured the settings. 
+                            Also changed the config file so that it can redirect to https file ( although it is accessed to the 80  socket)
+                           
+                           //TODO :  Will add update list in the webpage -> using react.js ( js library ) // will learn more about  frameworks.
+                            
+
+        
