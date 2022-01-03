@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -8,8 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" >
+
+      <!-- Bootstrap js // popper js is included in bundle.js-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
   </head>
+
 
 
 
@@ -17,38 +23,147 @@
 
 
 
-<!--  navigation bar -->
-<nav class="navbar">
-  
-  <image src ="codeforlee.com/images/logoimg.png" class = "rounded float-start" alt ="logo image"></image>
-  
-  // add JS for this
-<ul class="navbar justify-content-end nav-pills">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">Disabled</a>
-      </li>
-
-    </ul>
-
-</nav>
+<!-- Title - use the logo, remake the logo for suitable design.   -->
+<div class="container ">
+  <a class="navbar-brand " href="#">
+    <!-- resize it  -->
+    <img src="images/logoImage.png" alt="logoImage" width="90" height="50">
+  </a>
+</div>
 
 
 
-    <div class="jumbotron text-center">
-      <h1>Welcome to codeforlee.com !</h1>
+
+
+<!--  add a background color  -->
+
+
+<!--  navigation bar // resize the nav bar  // add the margins for the bar. -->
+
+<nav class="navbar navbar-expand-lg bg-light">
+<!--  change the margins  -->
+    <!-- problem with image , check it later.  // resize the image for the logo ,  use the relative path-->
+    <div class ="container ">
+
+        <!-- change the image  into strip image. -->
+
     </div>
 
 
-<!-- intro statement -->
+    
+    <!-- // add JS for this  click to move to next page. -->
+    <ul class="nav nav-tabs" id ="myTab" role = "tablist" >
+
+      <!-- The first page - index.html // current page-->
+        <li class="nav-item"> 
+          <a class="nav-link active" aria-current="page" href="#">Main Page</a>
+        </li>
+      
+        <!-- pages to introduct and show the js skills , add later.  -->
+        <li class="nav-item"> 
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+
+        
+        <!-- Language dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"  href="#" id ="LangDropdown" role = "button" data-bs-toggle="dropdown" aria-expanded="false">
+            Language</a>
+            <ul class="dropdown-menu" aria-labelledby="LangDropdown">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Korean</a></li>
+              <li><a class="dropdown-item" href="#">Bahasa Malayu</a></li>
+              <!-- TODO : Bahasa malayu will be updated soon -->
+            </ul>
+        </li>
+
+        <!-- goto updates page (new html page) -->
+        <li class="nav-item">
+          <a class="nav-link"  href ="#">Updates</a>
+        </li>
+      </ul>
+      <!--  add margins at the end of the navbar -->
+
+ </nav>
+
+
+
+
+
+<!-- cards for displaying info -->
+<!-- change the item into cards.  -->
+<!-- add the buttons to indicate the page number and make buttons to react.  -->
+<div class="container">
+
+  <div id="carouselFace" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+         <!-- image for who am I? -->
+        <img src="images/logoImage.png" class="d-block w-100" alt="image1">
+      </div>
+      <!-- image for What I can do -->
+      <div class="carousel-item">
+        <img src="images/testimage.png" class="d-block w-100" alt="image2">
+      </div>
+      <!-- Image for About this webpage -->
+      <div class="carousel-item">
+        <img src="images/testimage.png" class="d-block w-100" alt="image3">
+      </div>
+      <!-- Image for Contact information -->
+      <div class="carousel-item">
+        <img src="images/testimage.png" class="d-block w-100" alt="image4">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!--  scroll down and image changes  -->
+<!-- TODO:   add corresponding images for intro.-->
+ <!-- image list  : who are you , what can you do  , about this webpage, conatcts  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- intro statement  -- old one without any graphics. >
 
 <div class="container"> 
 
@@ -88,16 +203,21 @@
 
 
 
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+-->
 
 
 
-<!-- TODO : add buttons to select the language. -->
+
+
+
+
+
+
+
+</body>
+
+
+    </html>
+
+
+
